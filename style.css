@@ -175,6 +175,18 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .-z-1 {
+    z-index: calc(1 * -1);
+  }
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
   }
@@ -208,17 +220,32 @@
   .table {
     display: table;
   }
+  .h-312 {
+    height: calc(var(--spacing) * 312);
+  }
   .h-auto {
     height: auto;
+  }
+  .min-h-screen {
+    min-height: 100vh;
   }
   .w-\[53\.33\%\] {
     width: 53.33%;
   }
+  .w-full {
+    width: 100%;
+  }
   .flex-shrink {
+    flex-shrink: 1;
+  }
+  .shrink {
     flex-shrink: 1;
   }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .shrink-1 {
+    flex-shrink: 1;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -373,6 +400,102 @@
   .bg-neutral-800 {
     background-color: var(--color-neutral-800);
   }
+  .bg-neutral-900 {
+    background-color: var(--color-neutral-900);
+  }
+  .bg-\[url\(\'assets\/home\/\'\)\] {
+    background-image: url('assets/home/');
+  }
+  .bg-\[url\(\'assets\/home\/bg-pattern-footer\.svg\'\)\] {
+    background-image: url('assets/home/bg-pattern-footer.svg');
+  }
+  .bg-\[url\(\'assets\/home\/bg-pattern-header\.svg\'\)\] {
+    background-image: url('assets/home/bg-pattern-header.svg');
+  }
+  .bg-contain {
+    background-size: contain;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-\[center_2rem\] {
+    background-position: center 2rem;
+  }
+  .bg-bottom {
+    background-position: bottom;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-position-\[-10\%_center\] {
+    background-position: -10% center;
+  }
+  .bg-position-\[-10rem_center\] {
+    background-position: -10rem center;
+  }
+  .bg-position-\[-20\%_center\] {
+    background-position: -20% center;
+  }
+  .bg-position-\[-50\%_center\] {
+    background-position: -50% center;
+  }
+  .bg-position-\[10rem_center\] {
+    background-position: 10rem center;
+  }
+  .bg-position-\[center_-2rem\] {
+    background-position: center -2rem;
+  }
+  .bg-position-\[center_-3\%\] {
+    background-position: center -3%;
+  }
+  .bg-position-\[center_-4\%\] {
+    background-position: center -4%;
+  }
+  .bg-position-\[center_-4\.5\%\] {
+    background-position: center -4.5%;
+  }
+  .bg-position-\[center_-4\.8\%\] {
+    background-position: center -4.8%;
+  }
+  .bg-position-\[center_-5\%\] {
+    background-position: center -5%;
+  }
+  .bg-position-\[center_-7rem\] {
+    background-position: center -7rem;
+  }
+  .bg-position-\[center_-8rem\] {
+    background-position: center -8rem;
+  }
+  .bg-position-\[center_-10rem\] {
+    background-position: center -10rem;
+  }
+  .bg-position-\[center_2rem\] {
+    background-position: center 2rem;
+  }
+  .bg-position-\[center_3rem\] {
+    background-position: center 3rem;
+  }
+  .bg-position-\[center_5rem\] {
+    background-position: center 5rem;
+  }
+  .bg-position-\[center_6\.5rem\] {
+    background-position: center 6.5rem;
+  }
+  .bg-position-\[center_6rem\] {
+    background-position: center 6rem;
+  }
+  .bg-position-\[center_7\.5rem\] {
+    background-position: center 7.5rem;
+  }
+  .bg-position-\[center_7rem\] {
+    background-position: center 7rem;
+  }
+  .bg-top {
+    background-position: top;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -484,9 +607,84 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
+  .md\:order-2 {
+    @media (width >= 48rem) {
+      order: 2;
+    }
+  }
+  .md\:col-start-2 {
+    @media (width >= 48rem) {
+      grid-column-start: 2;
+    }
+  }
+  .md\:row-span-2 {
+    @media (width >= 48rem) {
+      grid-row: span 2 / span 2;
+    }
+  }
+  .md\:row-span-3 {
+    @media (width >= 48rem) {
+      grid-row: span 3 / span 3;
+    }
+  }
+  .md\:row-end-2 {
+    @media (width >= 48rem) {
+      grid-row-end: 2;
+    }
+  }
+  .md\:mx-0 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:mx-auto {
+    @media (width >= 48rem) {
+      margin-inline: auto;
+    }
+  }
+  .md\:mr-auto {
+    @media (width >= 48rem) {
+      margin-right: auto;
+    }
+  }
   .md\:mb-28 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 28);
+    }
+  }
+  .md\:ml-0 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:ml-10 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:h-246\.5 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 246.5);
+    }
+  }
+  .md\:max-w-277\.5 {
+    @media (width >= 48rem) {
+      max-width: calc(var(--spacing) * 277.5);
+    }
+  }
+  .md\:min-w-86\.25 {
+    @media (width >= 48rem) {
+      min-width: calc(var(--spacing) * 86.25);
+    }
+  }
+  .md\:basis-1\/2 {
+    @media (width >= 48rem) {
+      flex-basis: calc(1 / 2 * 100%);
+    }
+  }
+  .md\:basis-60 {
+    @media (width >= 48rem) {
+      flex-basis: calc(var(--spacing) * 60);
     }
   }
   .md\:basis-70 {
@@ -494,9 +692,109 @@
       flex-basis: calc(var(--spacing) * 70);
     }
   }
+  .md\:basis-86\.25 {
+    @media (width >= 48rem) {
+      flex-basis: calc(var(--spacing) * 86.25);
+    }
+  }
+  .md\:basis-\[30\%\] {
+    @media (width >= 48rem) {
+      flex-basis: 30%;
+    }
+  }
+  .md\:basis-\[40\%\] {
+    @media (width >= 48rem) {
+      flex-basis: 40%;
+    }
+  }
+  .md\:basis-\[41\%\] {
+    @media (width >= 48rem) {
+      flex-basis: 41%;
+    }
+  }
+  .md\:basis-\[42\%\] {
+    @media (width >= 48rem) {
+      flex-basis: 42%;
+    }
+  }
+  .md\:basis-\[42\.5\%\] {
+    @media (width >= 48rem) {
+      flex-basis: 42.5%;
+    }
+  }
+  .md\:basis-\[43\%\] {
+    @media (width >= 48rem) {
+      flex-basis: 43%;
+    }
+  }
+  .md\:basis-\[45\%\] {
+    @media (width >= 48rem) {
+      flex-basis: 45%;
+    }
+  }
+  .md\:basis-\[50\%\] {
+    @media (width >= 48rem) {
+      flex-basis: 50%;
+    }
+  }
+  .md\:basis-\[70\%\] {
+    @media (width >= 48rem) {
+      flex-basis: 70%;
+    }
+  }
+  .md\:basis-\[86\.25\] {
+    @media (width >= 48rem) {
+      flex-basis: 86.25;
+    }
+  }
+  .md\:basis-auto {
+    @media (width >= 48rem) {
+      flex-basis: auto;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-\[auto_15rem\] {
+    @media (width >= 48rem) {
+      grid-template-columns: auto 15rem;
+    }
+  }
+  .md\:grid-cols-\[auto_auto\] {
+    @media (width >= 48rem) {
+      grid-template-columns: auto auto;
+    }
+  }
+  .md\:grid-cols-\[auto_content\] {
+    @media (width >= 48rem) {
+      grid-template-columns: auto content;
+    }
+  }
+  .md\:grid-cols-\[auto_min\] {
+    @media (width >= 48rem) {
+      grid-template-columns: auto min;
+    }
+  }
+  .md\:grid-cols-\[auto_minmax\(content\,\)\] {
+    @media (width >= 48rem) {
+      grid-template-columns: auto minmax(content,);
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:place-content-center {
+    @media (width >= 48rem) {
+      place-content: center;
+    }
+  }
+  .md\:place-content-start {
+    @media (width >= 48rem) {
+      place-content: start;
     }
   }
   .md\:gap-0 {
@@ -507,6 +805,371 @@
   .md\:gap-28 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 28);
+    }
+  }
+  .md\:gap-y-6 {
+    @media (width >= 48rem) {
+      row-gap: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:place-self-start {
+    @media (width >= 48rem) {
+      place-self: start;
+    }
+  }
+  .md\:self-center {
+    @media (width >= 48rem) {
+      align-self: center;
+    }
+  }
+  .md\:self-start {
+    @media (width >= 48rem) {
+      align-self: flex-start;
+    }
+  }
+  .md\:overflow-x-hidden {
+    @media (width >= 48rem) {
+      overflow-x: hidden;
+    }
+  }
+  .md\:bg-\[url\(\'\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('');
+    }
+  }
+  .md\:bg-\[url\(\'assets\/home\/bg-pattern-header\.svg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('assets/home/bg-pattern-header.svg');
+    }
+  }
+  .md\:bg-\[url\(\'assets\/home\/bg-pattern-pricing\.svg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('assets/home/bg-pattern-pricing.svg');
+    }
+  }
+  .md\:bg-\[150\%_auto\] {
+    @media (width >= 48rem) {
+      background-size: 150% auto;
+    }
+  }
+  .md\:bg-cover {
+    @media (width >= 48rem) {
+      background-size: cover;
+    }
+  }
+  .md\:bg-size-\[150\%_auto\] {
+    @media (width >= 48rem) {
+      background-size: 150% auto;
+    }
+  }
+  .md\:bg-size-\[200\%_auto\] {
+    @media (width >= 48rem) {
+      background-size: 200% auto;
+    }
+  }
+  .md\:bg-size-\[200\%_center\] {
+    @media (width >= 48rem) {
+      background-size: 200% center;
+    }
+  }
+  .md\:bg-size-\[200s\%_auto\] {
+    @media (width >= 48rem) {
+      background-size: 200s% auto;
+    }
+  }
+  .md\:bg-size-\[250\%_auto\] {
+    @media (width >= 48rem) {
+      background-size: 250% auto;
+    }
+  }
+  .md\:bg-size-\[300\%_auto\] {
+    @media (width >= 48rem) {
+      background-size: 300% auto;
+    }
+  }
+  .md\:bg-size-\[auto_200\%\] {
+    @media (width >= 48rem) {
+      background-size: auto 200%;
+    }
+  }
+  .md\:bg-size-\[auto_250\%\] {
+    @media (width >= 48rem) {
+      background-size: auto 250%;
+    }
+  }
+  .md\:bg-size-\[auto_300\%\] {
+    @media (width >= 48rem) {
+      background-size: auto 300%;
+    }
+  }
+  .md\:bg-size-\[auto_500\%\] {
+    @media (width >= 48rem) {
+      background-size: auto 500%;
+    }
+  }
+  .md\:bg-\[150\%\] {
+    @media (width >= 48rem) {
+      background-position: 150%;
+    }
+  }
+  .md\:bg-bottom {
+    @media (width >= 48rem) {
+      background-position: bottom;
+    }
+  }
+  .md\:bg-center {
+    @media (width >= 48rem) {
+      background-position: center;
+    }
+  }
+  .md\:bg-left {
+    @media (width >= 48rem) {
+      background-position: left;
+    }
+  }
+  .md\:bg-position-\[-10rem_center\] {
+    @media (width >= 48rem) {
+      background-position: -10rem center;
+    }
+  }
+  .md\:bg-position-\[-15rem_center\] {
+    @media (width >= 48rem) {
+      background-position: -15rem center;
+    }
+  }
+  .md\:bg-position-\[-20rem_center\] {
+    @media (width >= 48rem) {
+      background-position: -20rem center;
+    }
+  }
+  .md\:bg-position-\[-21rem_center\] {
+    @media (width >= 48rem) {
+      background-position: -21rem center;
+    }
+  }
+  .md\:bg-position-\[-22rem_center\] {
+    @media (width >= 48rem) {
+      background-position: -22rem center;
+    }
+  }
+  .md\:bg-position-\[-23rem_center\] {
+    @media (width >= 48rem) {
+      background-position: -23rem center;
+    }
+  }
+  .md\:bg-position-\[-25rem_center\] {
+    @media (width >= 48rem) {
+      background-position: -25rem center;
+    }
+  }
+  .md\:bg-position-\[-30rem_center\] {
+    @media (width >= 48rem) {
+      background-position: -30rem center;
+    }
+  }
+  .md\:bg-position-\[-50\%_center\] {
+    @media (width >= 48rem) {
+      background-position: -50% center;
+    }
+  }
+  .md\:bg-position-\[-50rem_center\] {
+    @media (width >= 48rem) {
+      background-position: -50rem center;
+    }
+  }
+  .md\:bg-position-\[-100px_center\] {
+    @media (width >= 48rem) {
+      background-position: -100px center;
+    }
+  }
+  .md\:bg-position-\[10\%_50\%\] {
+    @media (width >= 48rem) {
+      background-position: 10% 50%;
+    }
+  }
+  .md\:bg-position-\[10px_center\] {
+    @media (width >= 48rem) {
+      background-position: 10px center;
+    }
+  }
+  .md\:bg-position-\[100\%_0\%\] {
+    @media (width >= 48rem) {
+      background-position: 100% 0%;
+    }
+  }
+  .md\:bg-position-\[100\%_50\%\] {
+    @media (width >= 48rem) {
+      background-position: 100% 50%;
+    }
+  }
+  .md\:bg-position-\[bottom-5rem\] {
+    @media (width >= 48rem) {
+      background-position: bottom-5rem;
+    }
+  }
+  .md\:bg-position-\[bottom-10rem\] {
+    @media (width >= 48rem) {
+      background-position: bottom-10rem;
+    }
+  }
+  .md\:bg-position-\[center-10rem\] {
+    @media (width >= 48rem) {
+      background-position: center-10rem;
+    }
+  }
+  .md\:bg-position-\[center-100\%\] {
+    @media (width >= 48rem) {
+      background-position: center-100%;
+    }
+  }
+  .md\:bg-position-\[center-200\%\] {
+    @media (width >= 48rem) {
+      background-position: center-200%;
+    }
+  }
+  .md\:bg-position-\[center_-10rem\] {
+    @media (width >= 48rem) {
+      background-position: center -10rem;
+    }
+  }
+  .md\:bg-position-\[center_-20rem\] {
+    @media (width >= 48rem) {
+      background-position: center -20rem;
+    }
+  }
+  .md\:bg-position-\[center_-s20rem\] {
+    @media (width >= 48rem) {
+      background-position: center -s20rem;
+    }
+  }
+  .md\:bg-position-\[center_1\.5rem\] {
+    @media (width >= 48rem) {
+      background-position: center 1.5rem;
+    }
+  }
+  .md\:bg-position-\[center_1rem\] {
+    @media (width >= 48rem) {
+      background-position: center 1rem;
+    }
+  }
+  .md\:bg-position-\[center_2rem\] {
+    @media (width >= 48rem) {
+      background-position: center 2rem;
+    }
+  }
+  .md\:bg-position-\[center_3rem\] {
+    @media (width >= 48rem) {
+      background-position: center 3rem;
+    }
+  }
+  .md\:bg-position-\[center_6rem\] {
+    @media (width >= 48rem) {
+      background-position: center 6rem;
+    }
+  }
+  .md\:bg-position-\[center_10rem\] {
+    @media (width >= 48rem) {
+      background-position: center 10rem;
+    }
+  }
+  .md\:bg-position-\[center_20rem\] {
+    @media (width >= 48rem) {
+      background-position: center 20rem;
+    }
+  }
+  .md\:bg-position-\[right-1\/2\] {
+    @media (width >= 48rem) {
+      background-position: right-1/2;
+    }
+  }
+  .md\:bg-position-\[right-70\%\] {
+    @media (width >= 48rem) {
+      background-position: right-70%;
+    }
+  }
+  .md\:bg-position-\[right\] {
+    @media (width >= 48rem) {
+      background-position: right;
+    }
+  }
+  .md\:bg-position-\[right_-20rem_top\] {
+    @media (width >= 48rem) {
+      background-position: right -20rem top;
+    }
+  }
+  .md\:bg-position-\[right_-20rem_top_-10rem\] {
+    @media (width >= 48rem) {
+      background-position: right -20rem top -10rem;
+    }
+  }
+  .md\:bg-position-\[right_-20rem_top_-11\.5rem\] {
+    @media (width >= 48rem) {
+      background-position: right -20rem top -11.5rem;
+    }
+  }
+  .md\:bg-position-\[right_-20rem_top_-11rem\] {
+    @media (width >= 48rem) {
+      background-position: right -20rem top -11rem;
+    }
+  }
+  .md\:bg-position-\[right_-20rem_top_-12rem\] {
+    @media (width >= 48rem) {
+      background-position: right -20rem top -12rem;
+    }
+  }
+  .md\:bg-position-\[right_-20rem_top_-15rem\] {
+    @media (width >= 48rem) {
+      background-position: right -20rem top -15rem;
+    }
+  }
+  .md\:bg-position-\[right_-20rem_top_-20rem\] {
+    @media (width >= 48rem) {
+      background-position: right -20rem top -20rem;
+    }
+  }
+  .md\:bg-position-\[right_-25rem_top_-10rem\] {
+    @media (width >= 48rem) {
+      background-position: right -25rem top -10rem;
+    }
+  }
+  .md\:bg-position-\[right_6rem\] {
+    @media (width >= 48rem) {
+      background-position: right 6rem;
+    }
+  }
+  .md\:bg-position-\[right_20rem_top\] {
+    @media (width >= 48rem) {
+      background-position: right 20rem top;
+    }
+  }
+  .md\:bg-position-\[right_70\%\] {
+    @media (width >= 48rem) {
+      background-position: right 70%;
+    }
+  }
+  .md\:bg-position-\[right_80\%\] {
+    @media (width >= 48rem) {
+      background-position: right 80%;
+    }
+  }
+  .md\:bg-position-\[right_90\%\] {
+    @media (width >= 48rem) {
+      background-position: right 90%;
+    }
+  }
+  .md\:bg-right {
+    @media (width >= 48rem) {
+      background-position: right;
+    }
+  }
+  .md\:bg-no-repeat {
+    @media (width >= 48rem) {
+      background-repeat: no-repeat;
+    }
+  }
+  .md\:p-12 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 12);
     }
   }
   .md\:px-10 {
@@ -524,14 +1187,382 @@
       text-align: left;
     }
   }
+  .xl\:col-start-1 {
+    @media (width >= 80rem) {
+      grid-column-start: 1;
+    }
+  }
+  .xl\:col-start-2 {
+    @media (width >= 80rem) {
+      grid-column-start: 2;
+    }
+  }
+  .xl\:row-auto {
+    @media (width >= 80rem) {
+      grid-row: auto;
+    }
+  }
+  .xl\:row-span-2 {
+    @media (width >= 80rem) {
+      grid-row: span 2 / span 2;
+    }
+  }
+  .xl\:row-start-1 {
+    @media (width >= 80rem) {
+      grid-row-start: 1;
+    }
+  }
+  .xl\:mx-auto {
+    @media (width >= 80rem) {
+      margin-inline: auto;
+    }
+  }
+  .xl\:mb-0 {
+    @media (width >= 80rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .xl\:mb-3 {
+    @media (width >= 80rem) {
+      margin-bottom: calc(var(--spacing) * 3);
+    }
+  }
   .xl\:mb-8 {
     @media (width >= 80rem) {
       margin-bottom: calc(var(--spacing) * 8);
     }
   }
+  .xl\:mb-10 {
+    @media (width >= 80rem) {
+      margin-bottom: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:mb-35 {
+    @media (width >= 80rem) {
+      margin-bottom: calc(var(--spacing) * 35);
+    }
+  }
+  .xl\:ml-0 {
+    @media (width >= 80rem) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .xl\:ml-auto {
+    @media (width >= 80rem) {
+      margin-left: auto;
+    }
+  }
+  .xl\:grid {
+    @media (width >= 80rem) {
+      display: grid;
+    }
+  }
+  .xl\:h-150\.75 {
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 150.75);
+    }
+  }
+  .xl\:max-w-277\.5 {
+    @media (width >= 80rem) {
+      max-width: calc(var(--spacing) * 277.5);
+    }
+  }
+  .xl\:basis-\[42\.5\%\] {
+    @media (width >= 80rem) {
+      flex-basis: 42.5%;
+    }
+  }
+  .xl\:basis-\[42\.8\%\] {
+    @media (width >= 80rem) {
+      flex-basis: 42.8%;
+    }
+  }
+  .xl\:basis-\[43\%\] {
+    @media (width >= 80rem) {
+      flex-basis: 43%;
+    }
+  }
+  .xl\:basis-\[44\%\] {
+    @media (width >= 80rem) {
+      flex-basis: 44%;
+    }
+  }
+  .xl\:basis-\[45\%\] {
+    @media (width >= 80rem) {
+      flex-basis: 45%;
+    }
+  }
+  .xl\:basis-\[50\%\] {
+    @media (width >= 80rem) {
+      flex-basis: 50%;
+    }
+  }
+  .xl\:grid-cols-1 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .xl\:grid-cols-2 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .xl\:grid-cols-3 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .xl\:flex-row {
+    @media (width >= 80rem) {
+      flex-direction: row;
+    }
+  }
+  .xl\:place-content-center {
+    @media (width >= 80rem) {
+      place-content: center;
+    }
+  }
+  .xl\:place-items-center {
+    @media (width >= 80rem) {
+      place-items: center;
+    }
+  }
+  .xl\:place-items-end {
+    @media (width >= 80rem) {
+      place-items: end;
+    }
+  }
+  .xl\:items-start {
+    @media (width >= 80rem) {
+      align-items: flex-start;
+    }
+  }
+  .xl\:justify-center {
+    @media (width >= 80rem) {
+      justify-content: center;
+    }
+  }
+  .xl\:gap-8 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
+  .xl\:gap-35 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 35);
+    }
+  }
+  .xl\:gap-y-0 {
+    @media (width >= 80rem) {
+      row-gap: calc(var(--spacing) * 0);
+    }
+  }
+  .xl\:gap-y-10 {
+    @media (width >= 80rem) {
+      row-gap: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:place-self-center {
+    @media (width >= 80rem) {
+      place-self: center;
+    }
+  }
+  .xl\:place-self-start {
+    @media (width >= 80rem) {
+      place-self: start;
+    }
+  }
+  .xl\:self-center {
+    @media (width >= 80rem) {
+      align-self: center;
+    }
+  }
+  .xl\:self-end {
+    @media (width >= 80rem) {
+      align-self: flex-end;
+    }
+  }
+  .xl\:self-start {
+    @media (width >= 80rem) {
+      align-self: flex-start;
+    }
+  }
+  .xl\:justify-self-end {
+    @media (width >= 80rem) {
+      justify-self: flex-end;
+    }
+  }
+  .xl\:bg-none {
+    @media (width >= 80rem) {
+      background-image: none;
+    }
+  }
+  .xl\:bg-position-\[bottom_right_-20rem\] {
+    @media (width >= 80rem) {
+      background-position: bottom right -20rem;
+    }
+  }
+  .xl\:bg-position-\[center\] {
+    @media (width >= 80rem) {
+      background-position: center;
+    }
+  }
+  .xl\:bg-position-\[center_1rem_right_-20rem\] {
+    @media (width >= 80rem) {
+      background-position: center 1rem right -20rem;
+    }
+  }
+  .xl\:bg-position-\[center_10rem_right_-20rem\] {
+    @media (width >= 80rem) {
+      background-position: center 10rem right -20rem;
+    }
+  }
+  .xl\:bg-position-\[center_right\] {
+    @media (width >= 80rem) {
+      background-position: center right;
+    }
+  }
+  .xl\:bg-position-\[center_right_-10rem\] {
+    @media (width >= 80rem) {
+      background-position: center right -10rem;
+    }
+  }
+  .xl\:bg-position-\[center_right_-20rem\] {
+    @media (width >= 80rem) {
+      background-position: center right -20rem;
+    }
+  }
+  .xl\:bg-position-\[center_right_-40rem\] {
+    @media (width >= 80rem) {
+      background-position: center right -40rem;
+    }
+  }
+  .xl\:bg-position-\[center_right_10rem\] {
+    @media (width >= 80rem) {
+      background-position: center right 10rem;
+    }
+  }
+  .xl\:bg-position-\[right_-10\%_top_-11\.5rem\] {
+    @media (width >= 80rem) {
+      background-position: right -10% top -11.5rem;
+    }
+  }
+  .xl\:bg-position-\[right_-35rem_top_-11\.5rem\] {
+    @media (width >= 80rem) {
+      background-position: right -35rem top -11.5rem;
+    }
+  }
+  .xl\:bg-position-\[right_-35rem_top_-20rem\] {
+    @media (width >= 80rem) {
+      background-position: right -35rem top -20rem;
+    }
+  }
+  .xl\:bg-position-\[right_-35rem_top_-25rem\] {
+    @media (width >= 80rem) {
+      background-position: right -35rem top -25rem;
+    }
+  }
+  .xl\:bg-position-\[right_-35rem_top_-28rem\] {
+    @media (width >= 80rem) {
+      background-position: right -35rem top -28rem;
+    }
+  }
+  .xl\:bg-position-\[right_-35rem_top_-30rem\] {
+    @media (width >= 80rem) {
+      background-position: right -35rem top -30rem;
+    }
+  }
+  .xl\:bg-position-\[right_-35rem_top_-35rem\] {
+    @media (width >= 80rem) {
+      background-position: right -35rem top -35rem;
+    }
+  }
+  .xl\:bg-position-\[right_-35rem_top_-40rem\] {
+    @media (width >= 80rem) {
+      background-position: right -35rem top -40rem;
+    }
+  }
+  .xl\:bg-position-\[right_-38rem_top_-30rem\] {
+    @media (width >= 80rem) {
+      background-position: right -38rem top -30rem;
+    }
+  }
+  .xl\:bg-position-\[right_-38rem_top_-35rem\] {
+    @media (width >= 80rem) {
+      background-position: right -38rem top -35rem;
+    }
+  }
+  .xl\:bg-position-\[right_-40rem_top_-30rem\] {
+    @media (width >= 80rem) {
+      background-position: right -40rem top -30rem;
+    }
+  }
+  .xl\:bg-position-\[right_-40rem_top_-40rem\] {
+    @media (width >= 80rem) {
+      background-position: right -40rem top -40rem;
+    }
+  }
+  .xl\:bg-position-\[right_-40rem_top_-45rem\] {
+    @media (width >= 80rem) {
+      background-position: right -40rem top -45rem;
+    }
+  }
+  .xl\:bg-position-\[right_-45rem_top_-30rem\] {
+    @media (width >= 80rem) {
+      background-position: right -45rem top -30rem;
+    }
+  }
+  .xl\:bg-position-\[right_-45rem_top_-40rem\] {
+    @media (width >= 80rem) {
+      background-position: right -45rem top -40rem;
+    }
+  }
+  .xl\:bg-position-\[right_-50\%_top_-11\.5rem\] {
+    @media (width >= 80rem) {
+      background-position: right -50% top -11.5rem;
+    }
+  }
+  .xl\:bg-position-\[right_-50rem_top_-11\.5rem\] {
+    @media (width >= 80rem) {
+      background-position: right -50rem top -11.5rem;
+    }
+  }
   .xl\:px-0 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .xl\:px-5 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+  }
+  .xl\:py-10 {
+    @media (width >= 80rem) {
+      padding-block: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:text-center {
+    @media (width >= 80rem) {
+      text-align: center;
+    }
+  }
+  .xl\:preset-1 {
+    @media (width >= 80rem) {
+      font-size: 3.5rem;
+      --tw-leading: 120%;
+      line-height: 120%;
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
+    }
+  }
+  .xl\:preset-3 {
+    @media (width >= 80rem) {
+      font-size: 1.125rem;
+      --tw-leading: 150%;
+      line-height: 150%;
+      --tw-font-weight: var(--font-weight-normal);
+      font-weight: var(--font-weight-normal);
     }
   }
 }

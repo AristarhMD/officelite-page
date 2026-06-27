@@ -13,128 +13,162 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body class="bg-neutral-50">
-    <div>
+  <body class="bg-neutral-50 min-h-screen">
+    <div
+      class="relative bg-[url('assets/home/bg-pattern-header.svg')] bg-contain bg-no-repeat bg-position-[center_-7rem] md:bg-position-[right_-20rem_top_-11.5rem] xl:bg-position-[right_-38rem_top_-35rem]"
+    >
       <header
-        class="flex flex-col justify-between items-center gap-20 md:gap-28 pt-10 md:pt-20 mb-20 md:mb-28"
+        class="flex flex-col justify-between items-center gap-20 md:gap-28 xl:gap-35 pt-10 md:pt-20 mb-20 md:mb-28 xl:mb-35 md:max-w-277.5 md:mx-auto md:overflow-x-hidden"
       >
-        <nav><img src="assets/shared/logo.svg" alt="officelite logo" /></nav>
+        <nav class="md:self-start md:ml-10 xl:ml-0">
+          <img src="assets/shared/logo.svg" alt="officelite logo" />
+        </nav>
         <section
-          class="hero px-4 md:px-10 xl:px-0 flex flex-col md:flex-row gap-12 md:gap-0 justify-between items-center"
+          class="hero px-4 md:px-10 xl:px-0 flex flex-col md:flex-row gap-12 md:gap-0 justify-between items-center md:max-w-277.5"
         >
           <div
-            class="w-[53.33%] h-auto flex justify-center items-center shrink-0 md:basis-70"
+            class="w-[53.33%] h-auto flex justify-center items-center shrink-0 md:basis-[41%] xl:basis-[42.8%] md:order-2"
           >
             <img
               src="assets/home/illustration-charts.svg"
               alt="Ilustration charts"
+              class="w-full"
             />
           </div>
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center md:basis-[50%]">
             <h1
-              class="preset-1-tablet text-neutral-800 text-center md:text-left mb-6"
+              class="preset-1-tablet xl:preset-1 text-neutral-800 text-center md:text-left mb-6"
             >
               A simple solution to complex tasks is coming soon
             </h1>
             <p
-              class="preset-4 text-neutral-500 text-center md:text-left mb-6 xl:mb-8"
+              class="preset-4 xl:preset-3 text-neutral-500 text-center md:text-left mb-6 xl:mb-8"
             >
               Say goodbye to inefficient juggling of multiple apps, teams, and
               projects. Officelite is the new collaboration platform built with
               an intuitive interface to improve productivity.
             </p>
-            <button class="primary-button">Get Started</button>
+            <button class="primary-button md:self-start">Get Started</button>
           </div>
         </section>
       </header>
       <main class="pb-28">
-        <section class="px-4 flex flex-col gap-6 mb-20">
+        <section
+          class="px-4 md:px-10 xl:px-0 xl:max-w-277.5 xl:mx-auto flex flex-col gap-6 mb-20 xl:grid xl:grid-cols-3 xl:gap-8"
+        >
           <!-- First Card -->
           <article
-            class="px-6 py-10 grid grid-cols-1 gap-y-12 bg-neutral-0 rounded-xl shadow-white-card"
+            class="px-6 py-10 md:p-12 xl:py-10 xl:px-5 grid grid-cols-1 md:grid-cols-[auto_15rem] xl:grid-cols-1 gap-y-12 md:gap-y-6 xl:gap-y-10 bg-neutral-0 rounded-xl shadow-white-card"
           >
-            <div class="text-center text-neutral-900">
-              <h3 class="preset-2 mb-4">Basic</h3>
+            <div
+              class="text-center text-neutral-900 md:text-left xl:text-center"
+            >
+              <h3 class="preset-2 mb-4 xl:mb-10">Basic</h3>
               <h2 class="preset-1 mb-2">Free</h2>
               <p class="preset-4">Up to 5 users for free</p>
             </div>
 
-            <div class="flex flex-col gap-4 text-center text-neutral-500">
+            <div
+              class="flex flex-col gap-4 text-center text-neutral-500 md:col-start-2 md:row-span-2 xl:col-start-1 xl:row-auto md:place-content-center md:text-left md:basis-60 xl:text-center"
+            >
               <p class="preset-4">Basic document collaboration</p>
               <p class="preset-4">2 GB storage</p>
               <p class="preset-4">Great security and support</p>
             </div>
-            <button class="secondary-button mx-auto">Try for Free</button>
+            <button class="secondary-button mx-auto md:ml-0 xl:mx-auto">
+              Try for Free
+            </button>
           </article>
           <!-- Second Card -->
           <article
-            class="px-6 py-10 grid grid-cols-1 gap-y-12 bg-blue-500 rounded-xl shadow-blue-card text-neutral-0"
+            class="px-6 py-10 md:p-12 xl:py-10 xl:px-5 grid grid-cols-1 md:grid-cols-[auto_15rem] xl:grid-cols-1 gap-y-12 md:gap-y-6 xl:gap-y-10 bg-blue-500 rounded-xl shadow-blue-card text-neutral-0 md:bg-[url('assets/home/bg-pattern-pricing.svg')] md:bg-no-repeat md:bg-position-[-21rem_center] xl:bg-none"
           >
-            <div class="text-center">
-              <h3 class="preset-2 mb-4">Basic</h3>
+            <div class="text-center md:text-left xl:text-center">
+              <h3 class="preset-2 mb-4 xl:mb-10">Basic</h3>
               <h2 class="preset-1 mb-2">$9.99</h2>
               <p class="preset-4">Per user, billed monthly</p>
             </div>
 
-            <div class="flex flex-col gap-4 text-center">
+            <div
+              class="flex flex-col gap-4 text-center md:col-start-2 md:row-span-2 xl:col-start-1 xl:row-auto md:place-content-center md:text-left xl:text-center md:basis-60"
+            >
               <p class="preset-4">All essential integrations</p>
               <p class="preset-4">50 GB storage</p>
               <p class="preset-4">More control and insights</p>
             </div>
-            <button class="white-button mx-auto">Try for Free</button>
+            <button class="white-button mx-auto md:ml-0 xl:mx-auto">
+              Try for Free
+            </button>
           </article>
           <!-- Third card -->
           <article
-            class="px-6 py-10 grid grid-cols-1 gap-y-12 bg-neutral-0 rounded-xl shadow-white-card"
+            class="px-6 py-10 md:p-12 xl:py-10 xl:px-5 grid grid-cols-1 md:grid-cols-[auto_15rem] xl:grid-cols-1 gap-y-12 md:gap-y-6 xl:gap-y-10 bg-neutral-0 rounded-xl shadow-white-card"
           >
-            <div class="text-center text-neutral-900">
-              <h3 class="preset-2 mb-4">Ultimate</h3>
+            <div
+              class="text-center text-neutral-900 md:text-left xl:text-center"
+            >
+              <h3 class="preset-2 mb-4 xl:mb-10">Ultimate</h3>
               <h2 class="preset-1 mb-2">$19.99</h2>
               <p class="preset-4">Per user, billed monthly</p>
             </div>
 
-            <div class="flex flex-col gap-4 text-center text-neutral-500">
+            <div
+              class="flex flex-col gap-4 text-center text-neutral-500 md:col-start-2 md:row-span-2 xl:col-start-1 xl:row-auto md:place-content-center md:text-left md:basis-60 xl:text-center"
+            >
               <p class="preset-4">Robust work management</p>
               <p class="preset-4">100 GB storage</p>
               <p class="preset-4">VIP support</p>
             </div>
-            <button class="secondary-button mx-auto">Try for Free</button>
+            <button class="secondary-button mx-auto md:ml-0 xl:mx-auto">
+              Try for Free
+            </button>
           </article>
         </section>
         <!-- Count down -->
-        <section class="flex flex-col items-center mx-4">
-          <p class="mb-5 preset-6 uppercase text-neutral-0">
+        <section
+          class="flex flex-col items-center mx-4 xl:grid xl:grid-cols-2 md:max-w-277.5 md:mx-auto"
+        >
+          <p class="mb-5 preset-6 uppercase text-neutral-0 xl:mb-3">
             comming <span class="text-blue-500">4 nov 2026</span>
           </p>
-          <div class="flex gap-4 items-center justify-center mb-12">
+          <div
+            class="flex gap-4 items-center justify-center mb-12 xl:col-start-1 xl:place-self-start xl:mb-0"
+          >
             <article
               class="days-container bg-neutral-800 px-3 py-4 rounded-xl text-center"
             >
-              <p class="days preset-1-tablet text-neutral-0">47</p>
+              <p class="days preset-1-tablet xl:preset-1 text-neutral-0">47</p>
               <p class="preset-5 text-neutral-0 opacity-50">days</p>
             </article>
             <article
               class="hours-container bg-neutral-800 px-3 py-4 rounded-xl text-center"
             >
-              <p class="hours preset-1-tablet text-neutral-0">07</p>
+              <p class="hours preset-1-tablet xl:preset-1 text-neutral-0">07</p>
               <p class="preset-5 text-neutral-0 opacity-50">hours</p>
             </article>
             <article
               class="min-container bg-neutral-800 px-3 py-4 rounded-xl text-center"
             >
-              <p class="min preset-1-tablet text-neutral-0">56</p>
+              <p class="min preset-1-tablet xl:preset-1 text-neutral-0">56</p>
               <p class="preset-5 text-neutral-0 opacity-50">min</p>
             </article>
             <article
               class="sec-container bg-neutral-800 px-3 py-4 rounded-xl text-center"
             >
-              <p class="sec preset-1-tablet text-neutral-0">14</p>
+              <p class="sec preset-1-tablet xl:preset-1 text-neutral-0">14</p>
               <p class="preset-5 text-neutral-0 opacity-50">sec</p>
             </article>
           </div>
-          <button class="primary-button">Get Started</button>
+          <button
+            class="primary-button xl:col-start-2 xl:row-start-1 xl:row-span-2 xl:ml-auto xl:self-center"
+          >
+            Get Started
+          </button>
         </section>
       </main>
+      <div
+        class="absolute bottom-0 w-full h-312 md:h-246.5 xl:h-150.75 bg-neutral-900 -z-1 bg-[url('assets/home/bg-pattern-footer.svg')] bg-no-repeat bg-cover bg-position-[center_6rem] md:bg-position-[center_1.5rem] md:bg-size-[200%_auto] xl:bg-position-[center_right_-20rem]"
+      ></div>
     </div>
   </body>
 </html>
