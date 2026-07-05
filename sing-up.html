@@ -13,5 +13,167 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body class="min-h-screen bg-neutral-50 relative xl:pb-71.25">
+    <div class="w-full">
+      <header
+        class="flex justify-center md:justify-start pt-8 md:pt-16 xl:pt-20 mb-10 md:mb-20 xl:mb-35 md:ml-10 md:max-w-277.5 xl:mx-auto"
+      >
+        <a href="./index.html"
+          ><img src="assets/shared/logo.svg" alt="officelite logo"
+        /></a>
+      </header>
+
+      <main
+        class="grid grid-cols-1 xl:grid-cols-2 gap-y-10 md:gap-y-20 place-items-center xl:mx-auto md:max-w-277.5"
+      >
+        <section
+          class="mx-4 md:mx-10 xl:mx-0 flex flex-col gap-10 max-w-120 xl:max-w-135"
+        >
+          <div class="flex flex-col items-center">
+            <h1
+              class="preset-1-tablet xl:preset-1 text-neutral-800 text-center md:text-left mb-6"
+            >
+              Work smarter. Save time.
+            </h1>
+            <p
+              class="preset-4 xl:preset-3 text-neutral-500 text-center xl:text-left mb-6 xl:mb-0"
+            >
+              Easily manage your projects. Get on the list and receive in-app
+              perks available only to early subscribers. We are moving into
+              final development and getting ready for official launch soon.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center mx-4 xl:grid xl:grid-cols-2 md:max-w-277.5 md:mx-auto"
+          >
+            <p class="mb-5 preset-6 uppercase text-neutral-800 xl:mb-5">
+              comming <span class="text-blue-500">4 nov 2026</span>
+            </p>
+            <div
+              class="flex gap-4 items-center justify-center mb-12 xl:col-start-1 xl:place-self-start xl:mb-0"
+            >
+              <article
+                class="days-container bg-blue-100 px-3 py-4 rounded-xl text-center"
+              >
+                <p class="days preset-1-tablet md:preset-1 text-blue-500">47</p>
+                <p class="preset-5 text-neutral-800 opacity-50">days</p>
+              </article>
+              <article
+                class="hours-container bg-blue-100 px-3 py-4 rounded-xl text-center"
+              >
+                <p class="hours preset-1-tablet md:preset-1 text-blue-500">
+                  07
+                </p>
+                <p class="preset-5 text-neutral-800 opacity-50">hours</p>
+              </article>
+              <article
+                class="min-container bg-blue-100 px-3 py-4 rounded-xl text-center"
+              >
+                <p class="min preset-1-tablet md:preset-1 text-blue-500">56</p>
+                <p class="preset-5 text-neutral-800 opacity-50">min</p>
+              </article>
+              <article
+                class="sec-container bg-blue-100 px-3 py-4 rounded-xl text-center"
+              >
+                <p class="sec preset-1-tablet md:preset-1 text-blue-500">14</p>
+                <p class="preset-5 text-neutral-800 opacity-50">sec</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <form
+          action="#"
+          class="py-10 px-5 xl:px-10 rounded-xl bg-neutral-0 w-[87%] max-w-111.25 mb-21 md:mb-30 xl:mb-0 xl:ml-auto"
+        >
+          <div class="flex flex-col gap-6 mb-8 xl:mb-10">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="border-b border-neutral-500/50 pb-4 px-4"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              class="border-b border-neutral-500/50 pb-4 px-4"
+            />
+
+            <div class="relative">
+              <button
+                type="button"
+                class="w-full flex justify-between items-center border-b border-neutral-500/50 pb-4 px-4 cursor-pointer"
+              >
+                <p class="preset-5">
+                  <span class="text-neutral-900">Basic Pack</span>
+                  <span class="ml-2.5 opacity-40">Free</span>
+                </p>
+
+                <img
+                  src="assets/sign-up/icon-arrow-down.svg"
+                  alt="drop-down arrow"
+                  class="drop-down-icon"
+                />
+              </button>
+              <input type="hidden" name="plan" id="plan" value="free" />
+              <ul
+                class="absolute left-0 right-0 top-full mt-2 bg-neutral-200 rounded-md flex flex-col overflow-hidden hidden z-10 ring-neutral-200 ring-1"
+              >
+                <li
+                  class="hover:bg-neutral-50 px-4 py-2 cursor-pointer preset-5 text-neutral-900"
+                  data-labe="Basic Pack"
+                  data-tag="Free"
+                  data-value="free"
+                >
+                  <span>Basic Pack</span>
+                  <span class="ml-2.5 opacity-40">Free</span>
+                </li>
+
+                <li
+                  class="hover:bg-neutral-50 px-4 py-2 cursor-pointer preset-5 text-neutral-900"
+                  data-labe="Basic Pack"
+                  data-tag=""
+                  data-value="basic"
+                >
+                  <span>Basic Pack</span>
+                </li>
+
+                <li
+                  class="hover:bg-neutral-50 px-4 py-2 cursor-pointer preset-5 text-neutral-900"
+                  data-labe="Unlimited Pack"
+                  data-tag=""
+                  data-value="ultimate"
+                >
+                  <span>Ultimated Pack</span>
+                </li>
+              </ul>
+            </div>
+
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              class="border-b border-neutral-500/50 pb-4 px-4"
+            />
+            <input
+              type="text"
+              name="company"
+              placeholder="Company"
+              class="border-b border-neutral-500/50 pb-4 px-4"
+            />
+          </div>
+
+          <button type="submit" class="primary-button w-full">
+            Get on the list
+          </button>
+        </form>
+      </main>
+    </div>
+    <div
+      class="absolute bottom-0 xl:top-0 xl:right-0 w-full xl:w-[31.80%] h-79 md:h-118.25 xl:h-full bg-neutral-900 -z-2 bg-[url('assets/sign-up/bg-pattern-side.svg')] bg-no-repeat bg-center xl:bg-[46%_80%] xl:bg-size-[auto_auto] bg-size-[400%_auto] md:bg-size-[270%_auto]"
+    ></div>
+  </body>
 </html>
