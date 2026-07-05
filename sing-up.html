@@ -87,7 +87,10 @@
           action="#"
           class="py-10 px-5 xl:px-10 rounded-xl bg-neutral-0 w-[87%] max-w-111.25 mb-21 md:mb-30 xl:mb-0 xl:ml-auto"
         >
-          <div class="flex flex-col gap-6 mb-8 xl:mb-10">
+          <div
+            class="flex flex-col gap-6 mb-8 xl:mb-10"
+            id="drop-down-container"
+          >
             <input
               type="text"
               name="name"
@@ -109,8 +112,8 @@
                 class="w-full flex justify-between items-center border-b border-neutral-500/50 pb-4 px-4 cursor-pointer"
               >
                 <p class="preset-5">
-                  <span class="text-neutral-900">Basic Pack</span>
-                  <span class="ml-2.5 opacity-40">Free</span>
+                  <span class="text-neutral-900 label">Basic Pack</span>
+                  <span class="ml-2.5 opacity-40 tag">Free</span>
                 </p>
 
                 <img
@@ -127,7 +130,7 @@
               >
                 <li
                   class="hover:bg-neutral-50 px-4 py-2 cursor-pointer preset-5 text-neutral-900"
-                  data-labe="Basic Pack"
+                  data-label="Basic Pack"
                   data-tag="Free"
                   data-value="free"
                 >
@@ -137,7 +140,7 @@
 
                 <li
                   class="hover:bg-neutral-50 px-4 py-2 cursor-pointer preset-5 text-neutral-900"
-                  data-labe="Basic Pack"
+                  data-label="Basic Pack"
                   data-tag=""
                   data-value="basic"
                 >
@@ -146,7 +149,7 @@
 
                 <li
                   class="hover:bg-neutral-50 px-4 py-2 cursor-pointer preset-5 text-neutral-900"
-                  data-labe="Unlimited Pack"
+                  data-label="Unlimited Pack"
                   data-tag=""
                   data-value="ultimate"
                 >
