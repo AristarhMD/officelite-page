@@ -105,6 +105,7 @@
             <div class="relative">
               <button
                 type="button"
+                id="planTrigger"
                 class="w-full flex justify-between items-center border-b border-neutral-500/50 pb-4 px-4 cursor-pointer"
               >
                 <p class="preset-5">
@@ -113,13 +114,15 @@
                 </p>
 
                 <img
+                  id="drop-down-icon"
                   src="assets/sign-up/icon-arrow-down.svg"
                   alt="drop-down arrow"
-                  class="drop-down-icon"
+                  class="drop-down-icon transform-[rotate] duration-300 ease-in-out"
                 />
               </button>
               <input type="hidden" name="plan" id="plan" value="free" />
               <ul
+                id="planList"
                 class="absolute left-0 right-0 top-full mt-2 bg-neutral-200 rounded-md flex flex-col overflow-hidden hidden z-10 ring-neutral-200 ring-1"
               >
                 <li
