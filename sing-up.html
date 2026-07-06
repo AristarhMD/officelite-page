@@ -11,8 +11,8 @@
     />
     <title>Officelite coming soon site</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="sign-up.js" defer></script>
     <script src="timer.js" defer></script>
+    <script src="sign-up.js" defer></script>
   </head>
   <body class="min-h-screen bg-neutral-50 relative xl:pb-71.25">
     <div class="w-full">
@@ -57,27 +57,27 @@
               <article
                 class="days-container bg-blue-100 px-3 py-4 rounded-xl text-center"
               >
-                <p class="days preset-1-tablet md:preset-1 text-blue-500">47</p>
+                <p class="days preset-1-tablet md:preset-1 text-blue-500">00</p>
                 <p class="preset-5 text-neutral-800 opacity-50">days</p>
               </article>
               <article
                 class="hours-container bg-blue-100 px-3 py-4 rounded-xl text-center"
               >
                 <p class="hours preset-1-tablet md:preset-1 text-blue-500">
-                  07
+                  00
                 </p>
                 <p class="preset-5 text-neutral-800 opacity-50">hours</p>
               </article>
               <article
                 class="min-container bg-blue-100 px-3 py-4 rounded-xl text-center"
               >
-                <p class="min preset-1-tablet md:preset-1 text-blue-500">56</p>
+                <p class="min preset-1-tablet md:preset-1 text-blue-500">00</p>
                 <p class="preset-5 text-neutral-800 opacity-50">min</p>
               </article>
               <article
                 class="sec-container bg-blue-100 px-3 py-4 rounded-xl text-center"
               >
-                <p class="sec preset-1-tablet md:preset-1 text-blue-500">14</p>
+                <p class="sec preset-1-tablet md:preset-1 text-blue-500">00</p>
                 <p class="preset-5 text-neutral-800 opacity-50">sec</p>
               </article>
             </div>
@@ -92,25 +92,57 @@
             class="flex flex-col gap-6 mb-8 xl:mb-10"
             id="drop-down-container"
           >
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              class="border-b border-neutral-500/50 pb-4 px-4"
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-              class="border-b border-neutral-500/50 pb-4 px-4"
-            />
+            <label class="relative" for="name">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                class="peer input-style"
+                pattern="^[A-Za-z]+(?:['\-][A-Za-z]+)*(?:\s[A-Za-z]+(?:['\-][A-Za-z]+)*)?$"
+                required
+              />
+
+              <img
+                src="assets/sign-up/icon-check.svg"
+                alt="ok icon"
+                class="hidden peer-valid:block absolute top-0 right-0"
+              />
+
+              <img
+                src="assets/sign-up/icon-cross.svg"
+                alt="nok icon"
+                class="hidden peer-[:invalid:not(:placeholder-shown)]:block absolute z-2 top-0 right-0"
+              />
+            </label>
+
+            <label class="input-label" for="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                class="peer input-style"
+                pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+              />
+              <img
+                src="assets/sign-up/icon-check.svg"
+                alt="ok icon"
+                class="hidden peer-[:valid:not(:placeholder-shown)]:block absolute top-0 right-0"
+              />
+
+              <img
+                src="assets/sign-up/icon-cross.svg"
+                alt="nok icon"
+                class="hidden peer-[:invalid:not(:placeholder-shown)]:block absolute z-2 top-0 right-0"
+              />
+            </label>
 
             <div class="relative">
               <button
                 type="button"
                 id="planTrigger"
-                class="w-full flex justify-between items-center border-b border-neutral-500/50 pb-4 px-4 cursor-pointer"
+                class="w-full flex justify-between items-center input-style cursor-pointer"
               >
                 <p class="preset-5">
                   <span class="text-neutral-900 label">Basic Pack</span>
@@ -159,18 +191,25 @@
               </ul>
             </div>
 
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              class="border-b border-neutral-500/50 pb-4 px-4"
-            />
-            <input
-              type="text"
-              name="company"
-              placeholder="Company"
-              class="border-b border-neutral-500/50 pb-4 px-4"
-            />
+            <label class="input-label" for="phone">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+                class="input-style"
+              />
+            </label>
+
+            <label class="input-label" for="company">
+              <input
+                type="text"
+                name="company"
+                id="company"
+                placeholder="Company"
+                class="input-style"
+              />
+            </label>
           </div>
 
           <button type="submit" class="primary-button w-full">

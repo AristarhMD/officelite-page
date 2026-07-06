@@ -6,6 +6,7 @@ const packList = document.querySelector("#planList");
 const arrowIcon = document.querySelector("#drop-down-icon");
 const packInput = document.querySelector("#plan");
 const availablePacks = document.querySelectorAll("li");
+const formEl = document.querySelector("form");
 
 // Making btn for choose pack working
 packBtn.addEventListener("click", () => {

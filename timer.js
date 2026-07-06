@@ -14,7 +14,7 @@ const countDownTimer = setInterval(() => {
 
   const timeCalculated = calculcateTime(timeLeft);
   updateUI(timeCalculated);
-}, 1000);
+}, 500);
 
 // Calculate time left to the target
 function calculcateTime(timeLeft) {
