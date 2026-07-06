@@ -31,21 +31,20 @@ Users should be able to:
 
 ### Screenshot
 
-|           First Page           |           Second Page           |
-| :----------------------------: | :-----------------------------: |
-| ![](./design/mobile-first.png) | ![](./design/mobile-second.png) |
+|           First Page            |           Second Page            |
+| :-----------------------------: | :------------------------------: |
+| ![](./project/mobile-first.png) | ![](./project/mobile-second.png) |
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Office Page](https://office-page-vn.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- Tailwind CSS custom properties
+- Tailwind CSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
@@ -56,5 +55,5 @@ Next step is to get more projects done with React library and Incorporate with T
 
 ## Author
 
-- Frontend Mentor - [@AristarhMD](https://https://www.frontendmentor.io/profile/AristarhMD)
+- Frontend Mentor - [@AristarhMD](https://www.frontendmentor.io/profile/AristarhMD)
 - Email - [victor.nani1996@gmail.com](mailto:victor.nani1996@gmail.com)
