@@ -257,6 +257,9 @@
   .ml-2\.5 {
     margin-left: calc(var(--spacing) * 2.5);
   }
+  .contents {
+    display: contents;
+  }
   .flex {
     display: flex;
   }
@@ -301,8 +304,35 @@
   .w-\[87\%\] {
     width: 87%;
   }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[95\%\] {
+    width: 95%;
+  }
+  .w-\[97\%\] {
+    width: 97%;
+  }
+  .w-\[98\%\] {
+    width: 98%;
+  }
   .w-full {
     width: 100%;
+  }
+  .max-w-85 {
+    max-width: calc(var(--spacing) * 85);
+  }
+  .max-w-85\.75 {
+    max-width: calc(var(--spacing) * 85.75);
+  }
+  .max-w-86 {
+    max-width: calc(var(--spacing) * 86);
+  }
+  .max-w-87 {
+    max-width: calc(var(--spacing) * 87);
+  }
+  .max-w-88 {
+    max-width: calc(var(--spacing) * 88);
   }
   .max-w-111 {
     max-width: calc(var(--spacing) * 111);
@@ -312,6 +342,12 @@
   }
   .max-w-120 {
     max-width: calc(var(--spacing) * 120);
+  }
+  .min-w-85 {
+    min-width: calc(var(--spacing) * 85);
+  }
+  .min-w-85\.75 {
+    min-width: calc(var(--spacing) * 85.75);
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -820,6 +856,11 @@
   .md\:max-w-277\.5 {
     @media (width >= 48rem) {
       max-width: calc(var(--spacing) * 277.5);
+    }
+  }
+  .md\:max-w-max {
+    @media (width >= 48rem) {
+      max-width: max-content;
     }
   }
   .md\:basis-60 {
